@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
   z-index: 2;
   margin-top: 10px;
   background: transparent;
-  padding: 20px 80px;
+  padding: 10px 80px;
 `
 
 const Logo = styled.div`
@@ -73,5 +73,4 @@ export {
     Logo,
     DesktopNav,
     MobileNav
-
 }
