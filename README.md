@@ -1,4 +1,4 @@
-# HNGi9 INTRODUCTORY PROJECT
+# HNGi9 STAGE THREE PROJECT
 
 > This project is the third project in HNGi9. 
 
