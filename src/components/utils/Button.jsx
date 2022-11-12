@@ -10,6 +10,5 @@ const Button = ({type, isDisabled, children, section}) => {
   
   Button.defaultProps = {
       type: 'button',
-      id: 'btn',
       isDisabled: false,
   }

@@ -1,12 +1,32 @@
 import { Link } from 'react-router-dom'
 
-const Nav = () => {
+const Nav = ({ type }) => {
+    const navigationButtons = [
+        {
+            text: "Home",
+            link: "/"
+        },
+        {
+            text: "Place to stay",
+            link: "/place"
+        },
+        {
+            text: "NFTs",
+            link: "/nfts"
+        },
+        {
+            text: "Community",
+            link: "/community"
+        }
+    ]
   return (
-
-    <Link to = {btnDetail.link} class="button link-btn" id={btnDetail.id} key={btnDetail.id} >
-        {btnDetail.text}
-    </Link>
-    <div>Nav</div>
+    <>
+        {navigationButtons.map((button) => (
+            <Link to = {button.link} className={`${type}-btn`} >
+                {button.text}
+            </Link>
+        ))}
+    </>
   )
 }
 
