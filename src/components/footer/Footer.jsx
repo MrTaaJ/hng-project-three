@@ -9,64 +9,71 @@ import FooterNavLink from "./FooterNavLink";
 
 const Footer = () => {
 
-  const footerLinksData = {
-    community: [
-      {
-        id: 1,
-        name: "NFT"
-      },
-      {
-        id: 2,
-        name: "Tokens"
-      },
-      {
-        id: 3,
-        name: "Landlords"
-      },
-      {
-        id: 4,
-        name: "Discord"
-      },
+  const footerLinksData = [
+    ["Community",
+      [
+        {
+          id: 1,
+          name: "NFT"
+        },
+        {
+          id: 2,
+          name: "Tokens"
+        },
+        {
+          id: 3,
+          name: "Landlords"
+        },
+        {
+          id: 4,
+          name: "Discord"
+        },
+      ]
     ],
-
-    places: [
-      {
-        id: 1,
-        name: "Castle"
-      },
-      {
-        id: 2,
-        name: "Farms"
-      },
-      {
-        id: 3,
-        name: "Beach"
-      },
-      {
-        id: 4,
-        name: "Learn more"
-      },
+  
+    ["Places",
+      [
+        {
+          id: 1,
+          name: "Castle"
+        },
+        {
+          id: 2,
+          name: "Farms"
+        },
+        {
+          id: 3,
+          name: "Beach"
+        },
+        {
+          id: 4,
+          name: "Learn more"
+        },
+      ]
     ],
-
-    about: [
-      {
-        id: 1,
-        name: "Road map"
-      },
-      {
-        id: 2,
-        name: "Creators"
-      },
-      {
-        id: 3,
-        name: "Career"
-      },
-      {
-        id: 4,
-        name: "Contact us"
-      },
-    ]
-  }
+  
+    ["About Us",
+      [
+        {
+          id: 1,
+          name: "Road map"
+        },
+        {
+          id: 2,
+          name: "Creators"
+        },
+        {
+          id: 3,
+          name: "Career"
+        },
+        {
+          id: 4,
+          name: "Contact us"
+        },
+      ]
+    ],
+  
+  ]
 
   return (
     <FooterContainer>
@@ -80,32 +87,11 @@ const Footer = () => {
           </div>
         </LogoSocialContainer>
         <FooterLinks>
-          <FooterNav>
-            <h5>Community</h5>
-            <div className="foot-links">
-              {footerLinksData.community.map((data) => (
-                <a className="footer-link-btn" key={data.id} href={data.name}>
-                  {data.name}
-                </a>
-              ))}
-            </div>
-          </FooterNav>
-
-          <FooterNav>
-            <h5>Places</h5>
-            <div className="foot-links">
-              {footerLinksData.places.map((data) => (
-                <a className="footer-link-btn" key={data.id} href={data.name}>
-                  {data.name}
-                </a>
-              ))}
-            </div>
-            {/* <FooterNavLink name="Places" dataArray = {footerLinksData.places}/> */}
-          </FooterNav>
-
-          <FooterNav>
-            <FooterNavLink name="About Us" dataArray={footerLinksData.about} />
-          </FooterNav>
+          {footerLinksData.map((data, index) => (
+            <FooterNav key={index}>
+              <FooterNavLink name={data[0]} dataArray = {data[1]}/>
+            </FooterNav>
+          ))}
         </FooterLinks>
       </TopContainer>
 
@@ -118,3 +104,5 @@ const Footer = () => {
 }
 
 export default Footer
+
+
