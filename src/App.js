@@ -53,7 +53,3 @@ function App() {
 }
 
 export default App;
-
-{/* 
-  <Route path='/' element = { <Home />} />
-</HandleContext.Provider> */}
