@@ -9,7 +9,7 @@ const Card = ({ card }) => {
     
         let display = [];
         for(let i = 0; i < rating; i++){
-            display.push(<img src="/img/rating.png" alt="" />);
+            display.push(<img src="/img/rating.png" alt="" key = {i+1} />);
         }
     
         return display;
