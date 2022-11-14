@@ -4,25 +4,29 @@ const Nav = ({ type }) => {
     const navigationButtons = [
         {
             text: "Home",
-            link: "/"
+            link: "/",
+            id:1
         },
         {
             text: "Place to stay",
-            link: "/place"
+            link: "/place",
+            id:2
         },
         {
             text: "NFTs",
-            link: "/nfts"
+            link: "/nfts",
+            id:3
         },
         {
             text: "Community",
-            link: "/community"
+            link: "/community",
+            id:4
         }
     ]
   return (
     <>
         {navigationButtons.map((button) => (
-            <Link to = {button.link} className={`${type}-btn`} >
+            <Link to = {button.link} className={`${type}-btn`} key = {button.id}>
                 {button.text}
             </Link>
         ))}

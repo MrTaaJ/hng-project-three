@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
   position: fixed;
   z-index: 2;
   margin-top: 10px;
-  background: transparent;
+  background: white;
   padding: 10px 80px;
 `
 

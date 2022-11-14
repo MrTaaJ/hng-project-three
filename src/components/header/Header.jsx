@@ -1,11 +1,11 @@
 import Button from "../utils/Button";
 import Nav from "../utils/Nav";
 import {
-    HeaderContainer,
-    Logo,
-    DesktopNav,
-    // MobileNav
-  } from "./Header.styles";
+  HeaderContainer,
+  Logo,
+  DesktopNav,
+  // MobileNav
+} from "./Header.styles";
 
 
 const Header = () => {

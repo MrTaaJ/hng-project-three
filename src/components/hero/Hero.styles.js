@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 const HeroContainer = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  background: transparent;
-  padding: 100px 0px 50px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    padding-top: 100px;
 `
 
 const TopContainer = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background: transparent;
-  padding: 50px 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    padding: 50px 80px;
 `
 
 const BottomContainer = styled.div`

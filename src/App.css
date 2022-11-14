@@ -25,3 +25,9 @@
   border-radius: 0 8px 8px 0;
   padding: 17px 87px;
 }
+
+.btn-main {
+  color: #A02279;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border-radius: 8px;
+}

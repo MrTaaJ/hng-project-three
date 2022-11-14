@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": true
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    },
+    {
+        "name": "Desert King",
+        "price": "1MBT per night",
+        "distance": "2345 Km away",
+        "availability": "available for 2 weeks stay",
+        "rating": 5,
+        "imageurl": "/img/",
+        "isLiked": false
+    }
+    
+]
+
