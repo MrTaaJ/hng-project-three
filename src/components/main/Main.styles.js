@@ -30,14 +30,18 @@ const BottomContainer = styled.div`
     justify-content: space-between;
     width: 100%;
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
-    padding: 50px 80px;
+    padding: 100px;
+
+    img {
+        transform: scale(1);
+    }
 `
 
 const HeadingContainer = styled.div`
     display: flex;
     flex-flow: column nowrap;
     gap: 48px;
-    width: 50%;
+    width: 40%;
 
     h1 {
         font-weight: 700;
@@ -51,6 +55,9 @@ const HeadingContainer = styled.div`
         font-size: 18px;
         line-height: 35px;
         color: #FFFFFF;
+    }
+    .btn-main {
+        width: fit-content;
     }
 `
 
