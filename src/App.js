@@ -4,6 +4,7 @@ import CardData from "./data/CardData.json";
 import { useState, useEffect } from "react";
 import './App.css';
 import {DataContext, HandleContext} from './data'
+import Footer from "./components/footer";
 
 CardData.forEach((data, index) => {
   data.imageurl += `meta-home-${index + 1}.png`;
@@ -48,6 +49,7 @@ function App() {
         
         {/* <Route path='/contact' element={<ContactPage handleAdd = {addForm} />}/> */}
       </Routes>
+      <Footer />
     </div>
   );
 }

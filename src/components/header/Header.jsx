@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <HeaderContainer>
         <Logo>
-            <img src={"/img/home-logo.png"} alt="" />
-            <img src="/img/metabnb.png" alt="" className="meta"/>
+            <img src={"/img/home-logo.svg"} alt="" />
+            <img src="/img/metabnb.svg" alt="" className="meta"/>
         </Logo>
         <DesktopNav>
             <Nav type={"desktop"}/>
