@@ -7,6 +7,7 @@ import './App.css';
 import {DataContext, HandleContext} from './data'
 import Footer from "./components/footer";
 import Header from "./components/header"
+import Modal from "./components/modal"
 
 CardData.forEach((data, index) => {
   data.imageurl += `meta-home-${index + 1}.png`;
@@ -34,15 +35,30 @@ function App() {
 
   };
 
+  const [toggle, setToggle] = useState(false);
+
+  const handlePop = (togglePop) => {
+    setToggle( togglePop )
+    console.log(toggle)
+  }
+
+  const handleCancel = (togglePopCancel) => {
+    setToggle( togglePopCancel )
+    console.log(toggle)
+  }
+
   return (
     <div className="container">
-      <Header />
+      <Header handlePop = { handlePop }/>
+      {toggle && <Modal handleCancel={handleCancel}/>}
       <Routes>
+            
+
         <Route path='/' element = {
            
           <HandleContext.Provider value = {handleLike}>
             <DataContext.Provider value = {homeData} >
-              <Home /> 
+              <Home toggle = { toggle } handlePop = { handlePop } /> 
             </DataContext.Provider> 
           </HandleContext.Provider> } />
 

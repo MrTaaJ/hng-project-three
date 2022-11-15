@@ -11,12 +11,18 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom'
 
 
-const Header = () => {
+const Header = ({ handlePop }) => {
 
   const [toggle, setToggle] = useState(false);
+  const [togglePop, setTogglePop] = useState();
 
   const handleBut = () => {
     setToggle( !toggle )
+  }
+
+  const handlePopBut = () => {
+    setTogglePop( true )
+    handlePop(togglePop)
   }
 
   return (
@@ -33,7 +39,9 @@ const Header = () => {
             <Nav type={"desktop"}/>
         </DesktopNav>
 
-        <Button section="header" >Connect Wallet</Button>
+        <div onClick={ handlePopBut }>
+          <Button section="header" >Connect Wallet</Button>
+        </div>
 
         <div className="hamburger">
           <button type="button" onClick={handleBut} >
