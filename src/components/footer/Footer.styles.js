@@ -15,23 +15,64 @@ const FooterContainer = styled.div`
         color: #F7F7F7;
         text-align: left;
     }
+
+    & {
+        @media screen and (max-width: 820px) {
+            padding: 30px 50px;
+        }
+    }
+
+    & {
+        @media screen and (max-width: 414px) {
+            align-items: center;
+            padding: 20px;
+            .rights {
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
 `
 
 const TopContainer = styled.div`
     display: flex;
     flex-flow: row nowrap;
     gap: 200px;
+    width: 100%;
+
+    & {
+        @media screen and (max-width: 820px) {
+            gap: 50px;
+            flex-flow: column nowrap;
+        }
+    }
 `
 
 const LogoSocialContainer = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    
 
     .social {
         display: flex;
         flex-flow: row nowrap;
         gap: 20px;
+    }
+
+    & {
+        @media screen and (max-width: 820px) {
+            gap: 30px;
+            img {
+                width: 200px;
+            }
+
+            .social {
+                img {
+                    width: 20px;
+                }
+            }
+        }
     }
 
 `
@@ -41,6 +82,12 @@ const FooterLinks = styled.div`
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 200px;
+
+    & {
+        @media screen and (max-width: 820px) {
+            gap: 30px;
+        }
+    }
 `
 
 const FooterNav = styled.div`

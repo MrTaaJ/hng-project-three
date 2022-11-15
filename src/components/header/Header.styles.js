@@ -127,7 +127,7 @@ const MobileNav = styled.nav`
   }
 
   & {
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: 415px) {
       display: none;
     }
   }
