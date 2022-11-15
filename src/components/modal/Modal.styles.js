@@ -6,8 +6,8 @@ const ModalContainer = styled.div`
     right: 0;
     display: grid;
     place-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
     animation: zoom 0.3s ease-in-out;
@@ -22,10 +22,11 @@ const ModalPop = styled.div`
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
-    width: 600px;
-    height: 326px;
+    width: 50%;
+    height: fit-content;
     background: #FFFFFF;
     border-radius: 16px;
+    padding-bottom: 20px;
     
 
     .common {
@@ -49,6 +50,12 @@ const ModalPop = styled.div`
         & .close:hover {
             cursor: pointer;
             color: red;
+        }
+    }
+
+    & {
+        @media screen and (max-width: 820px) {
+            width: 80%;
         }
     }
 `

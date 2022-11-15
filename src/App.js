@@ -39,12 +39,10 @@ function App() {
 
   const handlePop = (togglePop) => {
     setToggle( togglePop )
-    console.log(toggle)
   }
 
   const handleCancel = (togglePopCancel) => {
     setToggle( togglePopCancel )
-    console.log(toggle)
   }
 
   return (
@@ -52,8 +50,7 @@ function App() {
       <Header handlePop = { handlePop }/>
       {toggle && <Modal handleCancel={handleCancel}/>}
       <Routes>
-            
-
+          
         <Route path='/' element = {
            
           <HandleContext.Provider value = {handleLike}>
@@ -70,7 +67,6 @@ function App() {
             </DataContext.Provider> 
           </HandleContext.Provider> } />
         
-        {/* <Route path='/contact' element={<ContactPage handleAdd = {addForm} />}/> */}
       </Routes>
       <Footer />
     </div>
