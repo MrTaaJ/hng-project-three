@@ -8,6 +8,7 @@ import {
 } from "./Header.styles";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -20,14 +21,20 @@ const Header = () => {
 
   return (
     <HeaderContainer showMobileNav = {toggle}>
-        <Logo>
-            <img src={"/img/home-logo.svg"} alt="" />
-            <img src="/img/metabnb.svg" alt="" className="meta"/>
-        </Logo>
+
+        <Link to = "/">
+          <Logo>
+              <img src={"/img/home-logo.svg"} alt="" />
+              <img src="/img/metabnb.svg" alt="" className="meta"/>
+          </Logo>
+        </Link>
+
         <DesktopNav>
             <Nav type={"desktop"}/>
         </DesktopNav>
+
         <Button section="header" >Connect Wallet</Button>
+
         <div className="hamburger">
           <button type="button" onClick={handleBut} >
             <AiOutlineMenu className="open" size={30} />
@@ -35,7 +42,7 @@ const Header = () => {
           </button>
         </div>
 
-        {toggle && <MobileNav><Nav type={"mobile"}/></MobileNav>}
+        {toggle && <MobileNav onClick={handleBut}><Nav type={"mobile"} /></MobileNav>}
         
     </HeaderContainer>
   )

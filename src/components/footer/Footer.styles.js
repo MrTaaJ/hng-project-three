@@ -81,7 +81,7 @@ const FooterLinks = styled.div`
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 100px;
+    gap: 150px;
 
     & {
         @media screen and (max-width: 820px) {

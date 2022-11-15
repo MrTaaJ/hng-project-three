@@ -6,6 +6,7 @@ import {
   FooterNav,
 } from "./Footer.styles";
 import FooterNavLink from "./FooterNavLink";
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -77,15 +78,23 @@ const Footer = () => {
 
   return (
     <FooterContainer>
+
       <TopContainer>
+
         <LogoSocialContainer>
-          <img src={"/img/footer-logo.svg"} alt="" />
+
+          <Link to = "/">
+            <img src={"/img/footer-logo.svg"} alt="" />
+          </Link>          
+
           <div className="social">
             <img src={"/img/facebook.svg"} alt="" />
             <img src={"/img/instagram.svg"} alt="" />
             <img src={"/img/twitter.svg"} alt="" />
           </div>
+
         </LogoSocialContainer>
+
         <FooterLinks>
           {footerLinksData.map((data, index) => (
             <FooterNav key={index}>
@@ -93,6 +102,7 @@ const Footer = () => {
             </FooterNav>
           ))}
         </FooterLinks>
+        
       </TopContainer>
 
       <div className="rights">
