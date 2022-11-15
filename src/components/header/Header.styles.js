@@ -110,8 +110,8 @@ const MobileNav = styled.nav`
   flex-flow: column nowrap;
   gap: 5px;
   position: absolute;
-  top: 70px;
-  right: 50px;
+  top: 60px;
+  right: 5px;
   width: 50%;
 
   .mobile-btn {
