@@ -25,6 +25,7 @@ const Card = ({ card }) => {
 
     return (
         <CardContainer>
+            
             <ImageContainer isLiked = {card.isLiked}>
                 <img src={card.imageurl} alt="" />
                 <button type="button" >

@@ -20,11 +20,16 @@ const ImageContainer = styled.div`
     border-radius: 15px;
     position: relative;
 
-    .like-btn {
-        cursor: pointer;
+    button {
         position: absolute;
         top: 7px;
         right: 8px;
+        background: transparent;
+        border: none;
+    }
+
+    .like-btn {
+        cursor: pointer;
         color: ${props => (props.isLiked ? "red" : "#D7D7D7")};
     }
 `
