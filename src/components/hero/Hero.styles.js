@@ -10,7 +10,7 @@ const HeroContainer = styled.div`
 
     & {
         @media screen and (max-width: 820px) {
-            padding-top: 50px;
+            padding-top: 100px;
         }
     }
 `
@@ -50,10 +50,10 @@ const BottomContainer = styled.div`
 
     & {
         @media screen and (max-width: 414px) {
-            flex-flow: column nowrap;
-            height: fit-content;
-            gap: 20px;
-            padding: 20px 0;
+
+            img {
+                width: 100px;
+            }
         }
     }
 `
