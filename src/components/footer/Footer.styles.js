@@ -37,7 +37,7 @@ const FooterContainer = styled.div`
 const TopContainer = styled.div`
     display: flex;
     flex-flow: row nowrap;
-    gap: 200px;
+    gap: 20%;
     width: 100%;
 
     & {
@@ -81,7 +81,7 @@ const FooterLinks = styled.div`
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 200px;
+    gap: 100px;
 
     & {
         @media screen and (max-width: 820px) {

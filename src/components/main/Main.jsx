@@ -12,13 +12,23 @@ import Card from '../utils/Card';
 
 const Main = () => {
     const cards = useContext(DataContext)
+
+    const newCards = []
+
+    for(let i = 4; i < 8; i++){
+        newCards.push(cards[i]);
+    }
+    for(let i = 0; i < 4; i++){
+        newCards.push(cards[i]);
+    }
+
   return (
     <MainContainer>
         <TopContainer>
             <h1>Inspiration for your next adventure</h1>
 
             <GridContainer>
-                {cards.map((card) => (
+                {newCards.map((card) => (
                     <Card key={card.id} card = {card} />
                 ))}
             </GridContainer>

@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
+import Place from "./pages/place"; 
 import CardData from "./data/CardData.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './App.css';
 import {DataContext, HandleContext} from './data'
 import Footer from "./components/footer";
+import Header from "./components/header"
 
 CardData.forEach((data, index) => {
   data.imageurl += `meta-home-${index + 1}.png`;
@@ -12,10 +14,6 @@ CardData.forEach((data, index) => {
 })
 
 function App() {
-  // Don't forget to clear useEffect
-  useEffect(() => {
-    
-  }, [])
   
   const [homeData, setHomeData] = useState(CardData);
 
@@ -38,12 +36,21 @@ function App() {
 
   return (
     <div className="container">
+      <Header />
       <Routes>
         <Route path='/' element = {
            
           <HandleContext.Provider value = {handleLike}>
             <DataContext.Provider value = {homeData} >
               <Home /> 
+            </DataContext.Provider> 
+          </HandleContext.Provider> } />
+
+        <Route path='/place' element = {
+         
+          <HandleContext.Provider value = {handleLike}>
+            <DataContext.Provider value = {homeData} >
+              <Place /> 
             </DataContext.Provider> 
           </HandleContext.Provider> } />
         
