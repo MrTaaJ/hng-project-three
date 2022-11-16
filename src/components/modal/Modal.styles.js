@@ -54,7 +54,7 @@ const ModalPop = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             width: 80%;
         }
     }

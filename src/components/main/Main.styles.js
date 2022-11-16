@@ -23,7 +23,7 @@ const TopContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding: 30px 50px;
             h1 {
                 font-weight: 500;
@@ -33,7 +33,7 @@ const TopContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             padding: 20px 30px;
             h1 {
                 font-weight: 400;
@@ -56,7 +56,7 @@ const BottomContainer = styled.div`
     
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding: 30px;
             img {
                 width: 50%;
@@ -65,7 +65,7 @@ const BottomContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             flex-flow: column-reverse nowrap;
             gap: 20px;
 
@@ -100,7 +100,7 @@ const HeadingContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             gap: 30px;
             width: 50%;
 
@@ -118,7 +118,7 @@ const HeadingContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             width: 100%;
             align-items: center;
 
@@ -142,13 +142,13 @@ const PlaceContainer = styled.div`
     width: 100%;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding: 100px 50px;
         }
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             padding: 100px 20px;
         }
     }
@@ -204,7 +204,7 @@ const PlaceNavContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             flex-flow: column nowrap;
 
             .place-nav {
@@ -231,7 +231,7 @@ const PlaceNavContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
 
             .place-nav {
                 .place-link-btn {

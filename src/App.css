@@ -32,7 +32,7 @@
   border-radius: 8px;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 920px) {
   .btn {
     font-size: 14px;
     line-height: 18px;

@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
     padding-top: 100px;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding-top: 100px;
         }
     }
@@ -25,13 +25,13 @@ const TopContainer = styled.div`
     padding: 50px 80px;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding: 20px 30px;
         }
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             padding: 20px 10px;
             flex-flow: column-reverse nowrap;
             gap: 20px;
@@ -49,7 +49,7 @@ const BottomContainer = styled.div`
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
 
             img {
                 width: 100px;
@@ -111,7 +111,7 @@ const HeadingContainer = styled.div`
 
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             gap: 30px;
             
             h1 {
@@ -138,7 +138,7 @@ const HeadingContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             width: 100%;
             align-items: center;
             gap: 20px;
@@ -186,7 +186,7 @@ const ImageContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             .left-container{
                 margin-top: 50px;
             }

@@ -17,14 +17,14 @@ const HeaderContainer = styled.header`
   }
 
   & {
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 920px) {
       margin-top: 5px;
       padding: 10px;
     }
   }
 
   & {
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 430px) {
       margin-top: 0px;
       padding: 10px;
       .hamburger {
@@ -55,13 +55,13 @@ const Logo = styled.div`
   cursor: pointer;
 
   & {
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 920px) {
       transform: scale(0.7);
     }
   }
 
   & {
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 430px) {
         .meta {
             display: none;
         }
@@ -88,7 +88,7 @@ const DesktopNav = styled.nav`
   }
 
   & {
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 920px) {
       gap: 10px;
 
       .desktop-btn {
@@ -99,7 +99,7 @@ const DesktopNav = styled.nav`
   }
 
   & {
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -127,7 +127,7 @@ const MobileNav = styled.nav`
   }
 
   & {
-    @media screen and (min-width: 415px) {
+    @media screen and (min-width: 431px) {
       display: none;
     }
   }

@@ -6,13 +6,13 @@ const GridContainer = styled.div`
     gap: 24px;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             grid-template-columns: repeat(1, 1fr);
         }
     }

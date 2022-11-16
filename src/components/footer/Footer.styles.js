@@ -17,13 +17,13 @@ const FooterContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             padding: 30px 50px;
         }
     }
 
     & {
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 430px) {
             align-items: center;
             padding: 20px;
             .rights {
@@ -41,7 +41,7 @@ const TopContainer = styled.div`
     width: 100%;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             gap: 50px;
             flex-flow: column nowrap;
         }
@@ -61,7 +61,7 @@ const LogoSocialContainer = styled.div`
     }
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             gap: 30px;
             img {
                 width: 200px;
@@ -84,7 +84,7 @@ const FooterLinks = styled.div`
     gap: 150px;
 
     & {
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 920px) {
             gap: 30px;
         }
     }
